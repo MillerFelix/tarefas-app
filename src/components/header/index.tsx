@@ -4,7 +4,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Header() {
   const { data: session, status } = useSession();
-  console.log(status);
   return (
     <header className={styles.cabecalho}>
       <section className={styles.conteudo}>
